@@ -1,16 +1,21 @@
-import react from "react";
-import react_dom from "react-dom";
-import { createRoot } from 'react-dom/client';
+import './App.css';
 
-function test_button(){
-    return (
-        <h1>Hello World</h1>
-    )
+function Input(){
+  return(
+    <form>
+      <textarea></textarea>
+      <button>Submit</button>
+    </form>
+  )
 }
 
-const domRoot = document.getElementById('root');
-const root = createRoot(domNode);
 
+function App() {
+  return (
+    <div className="App">
+        <Input/>
+    </div>
+  );
+}
 
-
-console.log("hello");
+export default App;
