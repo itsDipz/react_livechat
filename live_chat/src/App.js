@@ -1,11 +1,18 @@
 import './App.css';
 
-function Input(){
-  return(
-    <form>
+function DisplayMessage() {
+  return (
+    <div className="message_display"></div>
+  )
+}
+
+
+function Input() {
+  return (
+    <div className="input_wrapper">
       <textarea></textarea>
       <button>Submit</button>
-    </form>
+    </div>
   )
 }
 
@@ -13,7 +20,8 @@ function Input(){
 function App() {
   return (
     <div className="App">
-        <Input/>
+      <DisplayMessage />
+      <Input />
     </div>
   );
 }
